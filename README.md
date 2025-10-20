@@ -3,44 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inscription - Mon E-commerce</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="signup-container">
-        <h1>Créez votre compte</h1>
-        <form id="signup-form">
-            <div class="form-group">
-                <label for="username">Nom d'utilisateur</label>
-                <input type="text" id="username" name="username" required>
-                <div class="error-message" id="username-error"></div>
-            </div>
+    <title>Le Riche Top Up - Obtenez vos Cartes et Crédits</title>
+    <style>
+        /* POLICE ET BASE */
+        body {
+            font-family: Arial, sans-serif; /* Police simple pour l'exemple */
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8ff; /* Couleur de fond très claire */
+            color: #333;
+        }
 
-            <div class="form-group">
-                <label for="email">Adresse e-mail</label>
-                <input type="email" id="email" name="email" required>
-                <div class="error-message" id="email-error"></div>
-            </div>
+        /* EN-TÊTE (NAVIGATION) */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+            background-color: #fff;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #6a1b9a; /* Couleur violette */
+        }
+        .logo-icon {
+            margin-right: 5px;
+            /* Placeholder pour l'icône VR */
+        }
+        .nav-social a {
+            margin-left: 15px;
+            color: #6a1b9a;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
 
-            <div class="form-group">
-                <label for="password">Mot de passe</label>
-                <input type="password" id="password" name="password" required>
-                <div class="error-message" id="password-error"></div>
-            </div>
-
-            <div class="form-group">
-                <label for="confirm-password">Confirmer le mot de passe</label>
-                <input type="password" id="confirm-password" name="confirm-password" required>
-                <div class="error-message" id="confirm-password-error"></div>
-            </div>
-
-            <button type="submit" class="btn-signup">S'inscrire</button>
-            <p class="login-link">
-                Déjà un compte ? <a href="login.html">Connectez-vous ici</a>
-            </p>
-        </form>
-    </div>
-
-    <script src="script.js"></script>
-</body>
-</html>
+        /* SECTION HÉRO (HAUT DE PAGE) */
+        .hero {
+            text-align: center;
+            padding: 60px 20px 40px;
+            background: linear-gradient(180deg, #fff 50%, #f4f2ff 100%); /* Léger dégradé de fond */
+            position: relative;
+            overflow: hidden; /* Pour contenir les formes abstraites */
+        }
+        .hero-title {
+            font-size: 2.5em;
+            font-weight: 700;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .hero-subtitle {
+            font-size: 1.1em;
+            color: #666;
+            max-width: 600px;
+            margin: 0 auto 30px;
+        }
+        .cta-button {
+            background-color: #6a1b9a; /* Violet */
+            background-image: linear-gradient(45deg, #7b1fa2, #9c27b0); /* Dégradé de violet */
+            color: #fff;
+            padding: 12px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            font
