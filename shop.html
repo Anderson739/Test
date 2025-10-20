@@ -1,1 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boutique - Tous les Produits</title>
+    <link rel="stylesheet" href="css/style.css"> 
+</head>
+<body>
 
+    <header>
+        <div class="logo">
+            <a href="index.html">🛍️ **Mon E-shop**</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="shop.html" class="active">Produits</a></li> 
+                <li><a href="a-propos.html">À Propos</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="panier">
+            <a href="panier.html">🛒 Panier (0)</a>
+        </div>
+    </header>
+
+    <main class="shop-page">
+        <h1>Catalogue Complet</h1>
+
+        <div class="shop-container">
+
+            <aside class="sidebar">
+                <h2>Filtres</h2>
+                
+                <section class="filter-group">
+                    <h3>Catégories</h3>
+                    <ul>
+                        <li><a href="#">Électronique</a> (12)</li>
+                        <li><a href="#">Vêtements</a> (25)</li>
+                        <li><a href="#">Maison & Jardin</a> (18)</li>
+                        <li><a href="#">Livres</a> (30)</li>
+                    </ul>
+                </section>
+
+                <section class="filter-group">
+                    <h3>Prix</h3>
+                    <input type="range" min="0" max="500" value="500">
+                    <p>Prix max: <span id="price-value">500 €</span></p>
+                </section>
+                
+                <button class="apply-filters">Appliquer les Filtres</button>
+            </aside>
+
+            <section class="product-listing">
+                <div class="sort-options">
+                    <label for="sort">Trier par :</label>
+                    <select id="sort">
+                        <option value="populaire">Popularité</option>
+                        <option value="prix-asc">Prix (croissant)</option>
+                        <option value="prix-desc">Prix (décroissant)</option>
+                        <option value="recent">Nouveautés</option>
+                    </select>
+                </div>
+                
+                <div class="product-grid">
+                    
+                    <article class="product-card">
+                        <a href="produit-detail-1.html">
+                            <img src="images/produit1.jpg" alt="Nom du Produit 1">
+                        </a>
+                        <h3><a href="produit-detail-1.html">Super Écouteurs sans Fil</a></h3>
+                        <p class="category">Électronique</p>
+                        <p class="price">129,99 €</p>
+                        <button class="add-to-cart-btn">Ajouter au panier</button>
+                    </article>
+
+                    <article class="product-card">
+                        <a href="produit-detail-2.html">
+                            <img src="images/produit2.jpg" alt="Nom du Produit 2">
+                        </a>
+                        <h3><a href="produit-detail-2.html">T-Shirt en Coton Bio</a></h3>
+                        <p class="category">Vêtements</p>
+                        <p class="price">29,90 €</p>
+                        <button class="add-to-cart-btn">Ajouter au panier</button>
+                    </article>
+                    
+                    </div>
+                
+                <div class="pagination">
+                    <a href="#">&laquo;</a>
+                    <a href="#" class="active">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">&raquo;</a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Mon E-commerce. Tous droits réservés.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
