@@ -3,107 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Site GitHub 🚀</title>
-    <style>
-        /* Styles CSS (vous pouvez les mettre dans un fichier style.css séparé) */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-            text-align: center;
-        }
-        .header {
-            background-color: #333;
-            color: white;
-            padding: 20px 0;
-        }
-        .header h1 {
-            margin: 0;
-            font-size: 2.5em;
-        }
-        .container {
-            padding: 20px;
-            max-width: 900px;
-            margin: 20px auto;
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        .projects-list {
-            list-style: none;
-            padding: 0;
-            margin-top: 20px;
-        }
-        .projects-list li {
-            background-color: #eee;
-            margin-bottom: 10px;
-            padding: 15px;
-            border-radius: 5px;
-            text-align: left;
-        }
-        .projects-list a {
-            color: #007bff;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        .projects-list a:hover {
-            text-decoration: underline;
-        }
-        .footer {
-            margin-top: 30px;
-            padding: 10px 0;
-            background-color: #333;
-            color: white;
-            font-size: 0.8em;
-        }
-    </style>
+    <title>Mon E-commerce - Accueil</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <div class="header">
-        <h1>Bienvenue sur Mon Espace GitHub</h1>
-        <p>Découvrez mes projets de développement web et logiciel.</p>
-    </div>
+    <header>
+        <div class="logo">
+            <a href="index.html">🛍️ **Mon E-shop**</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="produits.html">Produits</a></li>
+                <li><a href="a-propos.html">À Propos</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="panier">
+            <a href="panier.html">🛒 Panier (0)</a>
+        </div>
+    </header>
 
-    <div class="container">
-        <h2>À propos de moi</h2>
-        <p>Bonjour ! Je suis **[Votre Nom]**, un développeur passionné par [Domaine 1] et [Domaine 2]. J'utilise cet espace pour héberger mes projets personnels et open source.</p>
-        
-        <hr>
+    <main>
+        <section class="hero">
+            <h1>Bienvenue dans notre Boutique en Ligne !</h1>
+            <p>Découvrez nos meilleures offres et nos nouveautés.</p>
+            <a href="produits.html" class="cta-button">Voir les Produits</a>
+        </section>
 
-        <h2>Mes Projets Clés</h2>
-        <ul class="projects-list">
-            <li>
-                <a href="https://github.com/[Votre_Username]/Projet-A" target="_blank">Projet A - Application Web</a>
-                <p>Description du projet A : Une application construite avec React pour la gestion des tâches.</p>
-            </li>
-            <li>
-                <a href="https://github.com/[Votre_Username]/Projet-B" target="_blank">Projet B - Librairie Python</a>
-                <p>Description du projet B : Une librairie simple pour manipuler les fichiers JSON.</p>
-            </li>
-            <li>
-                <a href="https://github.com/[Votre_Username]/Projet-C" target="_blank">Projet C - Site Statique</a>
-                <p>Description du projet C : Mon premier site entièrement en HTML/CSS pur.</p>
-            </li>
-        </ul>
-        
-        <hr>
+        <section class="featured-products">
+            <h2>Nos Meilleurs Ventes</h2>
+            <div class="product-list">
+                <article class="product-card">
+                    <img src="images/produit1.jpg" alt="Nom du Produit 1">
+                    <h3>Produit Fantastique</h3>
+                    <p class="price">99,99 €</p>
+                    <button>Ajouter au panier</button>
+                </article>
+                </div>
+        </section>
+    </main>
 
-        <h2>Me Contacter</h2>
-        <p>Vous pouvez me trouver sur :</p>
-        <p>
-            <a href="https://github.com/[Votre_Username]" target="_blank">GitHub</a> | 
-            <a href="mailto:votre.email@example.com">Email</a> | 
-            <a href="https://www.linkedin.com/in/[Votre_LinkedIn]" target="_blank">LinkedIn</a>
-        </p>
-    </div>
+    <footer>
+        <p>&copy; 2025 Mon E-commerce. Tous droits réservés.</p>
+        <div class="social-links">
+            <a href="#">Facebook</a> | <a href="#">Instagram</a>
+        </div>
+    </footer>
 
-    <div class="footer">
-        © 2025 [Votre Nom]. Propulsé par GitHub Pages.
-    </div>
-
+    <script src="js/script.js"></script>
 </body>
 </html>
-￼Enter
