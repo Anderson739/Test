@@ -3,106 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Site GitHub 🚀</title>
-    <style>
-        /* Styles CSS (vous pouvez les mettre dans un fichier style.css séparé) */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-            text-align: center;
-        }
-        .header {
-            background-color: #333;
-            color: white;
-            padding: 20px 0;
-        }
-        .header h1 {
-            margin: 0;
-            font-size: 2.5em;
-        }
-        .container {
-            padding: 20px;
-            max-width: 900px;
-            margin: 20px auto;
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        .projects-list {
-            list-style: none;
-            padding: 0;
-            margin-top: 20px;
-        }
-        .projects-list li {
-            background-color: #eee;
-            margin-bottom: 10px;
-            padding: 15px;
-            border-radius: 5px;
-            text-align: left;
-        }
-        .projects-list a {
-            color: #007bff;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        .projects-list a:hover {
-            text-decoration: underline;
-        }
-        .footer {
-            margin-top: 30px;
-            padding: 10px 0;
-            background-color: #333;
-            color: white;
-            font-size: 0.8em;
-        }
-    </style>
+    <title>Inscription - Mon E-commerce</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="signup-container">
+        <h1>Créez votre compte</h1>
+        <form id="signup-form">
+            <div class="form-group">
+                <label for="username">Nom d'utilisateur</label>
+                <input type="text" id="username" name="username" required>
+                <div class="error-message" id="username-error"></div>
+            </div>
 
-    <div class="header">
-        <h1>Bienvenue sur Mon Espace GitHub</h1>
-        <p>Découvrez mes projets de développement web et logiciel.</p>
+            <div class="form-group">
+                <label for="email">Adresse e-mail</label>
+                <input type="email" id="email" name="email" required>
+                <div class="error-message" id="email-error"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Mot de passe</label>
+                <input type="password" id="password" name="password" required>
+                <div class="error-message" id="password-error"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="confirm-password">Confirmer le mot de passe</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+                <div class="error-message" id="confirm-password-error"></div>
+            </div>
+
+            <button type="submit" class="btn-signup">S'inscrire</button>
+            <p class="login-link">
+                Déjà un compte ? <a href="login.html">Connectez-vous ici</a>
+            </p>
+        </form>
     </div>
 
-    <div class="container">
-        <h2>À propos de moi</h2>
-        <p>Bonjour ! Je suis **[Votre Nom]**, un développeur passionné par [Domaine 1] et [Domaine 2]. J'utilise cet espace pour héberger mes projets personnels et open source.</p>
-        
-        <hr>
-
-        <h2>Mes Projets Clés</h2>
-        <ul class="projects-list">
-            <li>
-                <a href="https://github.com/[Votre_Username]/Projet-A" target="_blank">Projet A - Application Web</a>
-                <p>Description du projet A : Une application construite avec React pour la gestion des tâches.</p>
-            </li>
-            <li>
-                <a href="https://github.com/[Votre_Username]/Projet-B" target="_blank">Projet B - Librairie Python</a>
-                <p>Description du projet B : Une librairie simple pour manipuler les fichiers JSON.</p>
-            </li>
-            <li>
-                <a href="https://github.com/[Votre_Username]/Projet-C" target="_blank">Projet C - Site Statique</a>
-                <p>Description du projet C : Mon premier site entièrement en HTML/CSS pur.</p>
-            </li>
-        </ul>
-        
-        <hr>
-
-        <h2>Me Contacter</h2>
-        <p>Vous pouvez me trouver sur :</p>
-        <p>
-            <a href="https://github.com/[Votre_Username]" target="_blank">GitHub</a> | 
-            <a href="mailto:votre.email@example.com">Email</a> | 
-            <a href="https://www.linkedin.com/in/[Votre_LinkedIn]" target="_blank">LinkedIn</a>
-        </p>
-    </div>
-
-    <div class="footer">
-        © 2025 [Votre Nom]. Propulsé par GitHub Pages.
-    </div>
-
+    <script src="script.js"></script>
 </body>
 </html>
